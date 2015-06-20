@@ -175,10 +175,10 @@ angular.module('ismsHelpDesk')
       templateUrl: 'views/_user-modal.html'
     };
   })
-  .directive('candidateModal', function() {
+  .directive('eventModal', function() {
     return {
       restrict: 'E',
-      templateUrl: 'views/_candidate-modal.html'
+      templateUrl: 'views/event-modal.html'
     };
   })
   ;
