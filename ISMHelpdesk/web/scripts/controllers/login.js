@@ -1,18 +1,18 @@
 'use strict';
 
 angular.module('ismsHelpDesk')
-  .controller('LoginCtrl', function ($scope) { 
+  .controller('LoginCtrl', function ($scope, UserService) { 
 
-//    var getAllUsers = function() {    	
-//        UserService.findAll().then(function (result) {
-//        	$scope.employees = result.data.employees;         	
-//            try{
-//            	$scope.$apply();
-//            }catch(e){}
-//        },function(err){
-//        	//do something here
-//        });
-//    };
+    var getAllUsers = function() {    	
+        UserService.findAll().then(function (result) {
+        	$scope.employees = result.data.employees;         	
+            try{
+            	$scope.$apply();
+            }catch(e){}
+        },function(err){
+        	//do something here
+        });
+    };
     
     
     $scope.login = function(){
