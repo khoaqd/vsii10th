@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('recruiterApp')
+angular.module('ismsHelpDesk')
   .controller('NewCandidateCtrl', function ($scope, $http, $rootScope) {
 
     $scope.newUser = {};

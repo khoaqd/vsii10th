@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('recruiterApp')
+angular.module('ismsHelpDesk')
   .controller('ResultsCtrl', function ($scope, $rootScope, $http) {
 
     // $.get( "http://puppygifs.net/api/read/json", function( data ) {
