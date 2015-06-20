@@ -54,6 +54,15 @@ angular.module('starter.services', [])
             });
         deferred.resolve(results);
         return deferred.promise;
-    }
+    },
+    
+    getAllUsers: function (managerId) {   	
+        var deferred = $q.defer(),
+            results = users.filter(function (element) {
+                return parseInt(id) === element.id;
+            });
+        deferred.resolve(results);
+        return deferred.promise;
+    }    
   }
 });

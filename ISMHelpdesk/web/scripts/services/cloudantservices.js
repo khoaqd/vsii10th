@@ -47,6 +47,21 @@ app.get('/employess', function(req, res){
 	});
 });
 
+app.get('/users', function(req, res){	
+	db.get("84cd9c861940df2a4709bf18462ca76b",{ revs_info: true },function(err, body){
+		if(!err){
+			console.log(body);
+			var users = [];
+		      body.rows.forEach(function(doc) {
+		    	  users.push(doc.value);		      
+		      });
+		      res.send(JSON.stringify(users));
+		}
+	    
+	});
+});
+
+
 /**
  * Lookup the word in the wordnik online dictionary and return a description for it.
  * @param word {String} Word to lookup description for
